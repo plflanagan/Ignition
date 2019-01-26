@@ -1,4 +1,6 @@
 # Ignition
+Ignition is a set of tools to get your latest Xcode Project up to speed! No more setting up podfiles or installing Fastlane yet again. Get your project the way you want it -- immediately!
+
 
 ## How to Use
 Simply run the script from the directory of your `.xcodeproj` and watch your project get ready to roll!

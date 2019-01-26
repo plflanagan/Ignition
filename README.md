@@ -1,5 +1,7 @@
 # Ignition
 
+## Demo
+![](demo.gif)
 
 ## How to Use
 Simply run the script from the directory of your `.xcodeproj` and watch your project get ready to roll!

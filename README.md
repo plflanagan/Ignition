@@ -8,6 +8,7 @@ Simply run the script from the directory of your `.xcodeproj` and watch your pro
 
 ## Required Installations:
 (sudo) pip install pbxproj
+
 (sudo) gem install bundler
 
 ### Fastlane:
@@ -33,6 +34,7 @@ If you would like to use SwiftLint, then you will want to update this file as yo
 
 ### pods
 This file should list all of the pods you would like to use. If none, then make sure this is empty.
+
 Note: If you are going to use SwiftLint, it will be added automatically when you are running that step; so there is no need to add it to this file.
 
 ### pull_request_template.md

@@ -7,9 +7,9 @@
 Simply run the script from the directory of your `.xcodeproj` and watch your project get ready to roll!
 
 ## Required Installations:
-(sudo) pip install pbxproj
+pip install pbxproj
 
-(sudo) gem install bundler
+gem install bundler
 
 ### Fastlane:
 https://docs.fastlane.tools/getting-started/ios/setup/

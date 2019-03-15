@@ -8,6 +8,7 @@ Simply run the script from the directory of your `.xcodeproj` and watch your pro
 
 ## Required Installations:
 pip install pbxproj
+
 ^ https://github.com/kronenthaler/mod-pbxproj
 
 gem install bundler

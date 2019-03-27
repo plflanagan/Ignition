@@ -1,14 +1,39 @@
 #!/bin/bash
 
-
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-current_directory=`pwd`
-current_basename=`basename "$current_directory"`
 
+final_message="
+All setup!!!
+
+Todo checklist:
+"
+
+# Check if makePod is specified
+if [ "$#" == 2 ]; then
+  if [ "$1" == "--makePod" ]; then
+  	"$parent_path"/dev.sh "$2"
+
+  	# The folder paths will need to be updated for the below if the above was executed
+  	cd "$2"/Example
+
+  	final_message= "${final_message}
+[] REMINDER: On 'Pod::Spec.new do |s| in your podspec, you likely need to add 's.swift_version = 4.2'
+[] REMINDER: You may need to update the sources too.
+[] REMINDER: Run 'pod lib lint $2.podspec' when entire script is done to verify that everything is setup properly.
+[] REMINDER: Since you created the project this way, you likely will need to set the origin for git.
+[] Have you created the pod and spec github repos?
+[] REMINDER: Remember to make the pod and spec repos on github and then add the specRepo with 'pod repo add [REPO_NAME] [SOURCE_URL]'
+[] REMINDER: You will need to change the swiftLint script to the developmentDirectory not to ignore '- ../$2'
+"
+  fi
+fi
+
+echo "$final_message"
 
 # make sure running from right folder
 "$parent_path"/ignitionSupportingFiles/check_correct_folder.sh
-
+current_directory=`pwd`
+current_basename=`basename "$current_directory"`
 
 # Check if git initialized and whether user wants to initialize git
 
@@ -49,3 +74,4 @@ script="$parent_path"/ignitionSupportingFiles/fastlane/integrate_fastlane.sh
 # # create standard branches
 
 
+# echo "$final_message"

@@ -7,11 +7,11 @@
 Simply run the script from the directory of your `.xcodeproj` and watch your project get ready to roll!
 
 ## Required Installations:
-pip install pbxproj
+Before running, you will need a couple things installed.
+1. `pip install pbxproj`
+^ More information can be found [here](https://github.com/kronenthaler/mod-pbxproj)
 
-^ https://github.com/kronenthaler/mod-pbxproj
-
-gem install bundler
+2. `gem install bundler`
 
 ### Fastlane:
 https://docs.fastlane.tools/getting-started/ios/setup/
